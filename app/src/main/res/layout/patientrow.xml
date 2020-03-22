@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/patient" />
+
+    <TextView
+        android:id="@+id/textViewnom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/nom"
+        android:textSize="12dp"
+        app:layout_constraintStart_toStartOf="@+id/guideline14"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewprenom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/prenom"
+        android:textSize="12dp"
+        app:layout_constraintStart_toStartOf="@+id/guideline14"
+        app:layout_constraintTop_toBottomOf="@+id/textViewnom" />
+
+    <TextView
+        android:id="@+id/textViewtel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="N° Tel"
+        android:textSize="12dp"
+        app:layout_constraintStart_toStartOf="@+id/guideline13"
+        app:layout_constraintTop_toBottomOf="@+id/textViewnss" />
+
+    <TextView
+        android:id="@+id/textViewadresse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/adresse"
+        android:textSize="12dp"
+        app:layout_constraintStart_toStartOf="@+id/guideline15"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewnss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="NSS"
+        android:textSize="12dp"
+        app:layout_constraintStart_toStartOf="@+id/guideline13"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textViewvide1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/vide"
+        android:textSize="12dp"
+        app:layout_constraintStart_toStartOf="@+id/guideline15"
+        app:layout_constraintTop_toBottomOf="@+id/textViewadresse" />
+
+    <TextView
+        android:id="@+id/textViewvide2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/vide"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewprenom"
+        app:layout_constraintStart_toEndOf="@+id/textViewprenom"
+        app:layout_constraintTop_toTopOf="@+id/textViewprenom" />
+
+    <TextView
+        android:id="@+id/textViewvide3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/vide"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewnom"
+        app:layout_constraintStart_toEndOf="@+id/textViewnom"
+        app:layout_constraintTop_toTopOf="@+id/textViewnom" />
+
+    <TextView
+        android:id="@+id/textViewvide4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/vide"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewtel"
+        app:layout_constraintStart_toEndOf="@+id/textViewtel"
+        app:layout_constraintTop_toTopOf="@+id/textViewtel" />
+
+    <TextView
+        android:id="@+id/textViewvide5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/vide"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewnss"
+        app:layout_constraintStart_toEndOf="@+id/textViewnss"
+        app:layout_constraintTop_toTopOf="@+id/textViewnss" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="70dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="196dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="309dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

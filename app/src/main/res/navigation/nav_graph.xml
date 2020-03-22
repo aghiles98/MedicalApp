@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/menu">
+
+    <fragment
+        android:id="@+id/connexionFragment"
+        android:name="com.example.myapplication.ConnexionFragment"
+        android:label="fragment_connexion"
+        tools:layout="@layout/fragment_connexion" >
+        <action
+            android:id="@+id/action_connexionFragment_to_mdp_new"
+            app:destination="@id/mdp_new" />
+        <action
+            android:id="@+id/action_connexionFragment_to_compte_patient"
+            app:destination="@id/compte_patient" />
+    </fragment>
+    <fragment
+        android:id="@+id/connexionMedecin"
+        android:name="com.example.myapplication.connexionMedecin"
+        android:label="fragment_connexion_medecin"
+        tools:layout="@layout/fragment_connexion_medecin" >
+        <action
+            android:id="@+id/action_connexionMedecin_to_mdp_new"
+            app:destination="@id/mdp_new" />
+        <action
+            android:id="@+id/action_connexionMedecin_to_compte_medecin"
+            app:destination="@id/compte_medecin" />
+    </fragment>
+    <fragment
+        android:id="@+id/inscription_patient"
+        android:name="com.example.myapplication.inscription_patient"
+        android:label="fragment_inscription_patient"
+        tools:layout="@layout/fragment_inscription_patient" >
+        <action
+            android:id="@+id/action_inscription_patient_to_connexionFragment"
+            app:destination="@id/connexionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/inscription_medecin"
+        android:name="com.example.myapplication.inscription_medecin"
+        android:label="fragment_inscription_medecin"
+        tools:layout="@layout/fragment_inscription_medecin" >
+        <action
+            android:id="@+id/action_inscription_medecin_to_connexionMedecin"
+            app:destination="@id/connexionMedecin" />
+    </fragment>
+    <fragment
+        android:id="@+id/menu"
+        android:name="com.example.myapplication.menu"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_menu_to_type_compte"
+            app:destination="@id/type_compte" />
+        <action
+            android:id="@+id/action_menu_to_recherche"
+            app:destination="@id/recherche" />
+    </fragment>
+    <fragment
+        android:id="@+id/type_compte"
+        android:name="com.example.myapplication.type_compte"
+        android:label="fragment_type_compte"
+        tools:layout="@layout/fragment_type_compte" >
+        <action
+            android:id="@+id/action_type_compte_to_inscription_medecin"
+            app:destination="@id/inscription_medecin" />
+        <action
+            android:id="@+id/action_type_compte_to_inscription_patient"
+            app:destination="@id/inscription_patient" />
+        <action
+            android:id="@+id/action_type_compte_to_connexionFragment"
+            app:destination="@id/connexionFragment" />
+        <action
+            android:id="@+id/action_type_compte_to_connexionMedecin2"
+            app:destination="@id/connexionMedecin" />
+    </fragment>
+    <fragment
+        android:id="@+id/recherche"
+        android:name="com.example.myapplication.recherche"
+        android:label="fragment_recherche"
+        tools:layout="@layout/fragment_recherche" />
+    <fragment
+        android:id="@+id/liste"
+        android:name="com.example.myapplication.liste"
+        android:label="fragment_liste"
+        tools:layout="@layout/fragment_liste" />
+    <fragment
+        android:id="@+id/mdp_new"
+        android:name="com.example.myapplication.mdp_new"
+        android:label="fragment_mdp_new"
+        tools:layout="@layout/fragment_mdp_new" >
+        <action
+            android:id="@+id/action_mdp_new_to_connexionMedecin"
+            app:destination="@id/connexionMedecin" />
+        <action
+            android:id="@+id/action_mdp_new_to_connexionFragment"
+            app:destination="@id/connexionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/compte_medecin"
+        android:name="com.example.myapplication.compte_medecin"
+        android:label="fragment_compte_medecin"
+        tools:layout="@layout/fragment_compte_medecin" >
+        <action
+            android:id="@+id/action_compte_medecin_to_connexionMedecin"
+            app:destination="@id/connexionMedecin" />
+        <action
+            android:id="@+id/action_compte_medecin_to_listepat"
+            app:destination="@id/listepat" />
+    </fragment>
+    <fragment
+        android:id="@+id/compte_patient"
+        android:name="com.example.myapplication.compte_patient"
+        android:label="fragment_compte_patient"
+        tools:layout="@layout/fragment_compte_patient" >
+        <action
+            android:id="@+id/action_compte_patient_to_recherche"
+            app:destination="@id/recherche" />
+        <action
+            android:id="@+id/action_compte_patient_to_connexionFragment"
+            app:destination="@id/connexionFragment" />
+        <action
+            android:id="@+id/action_compte_patient_to_rdvpat"
+            app:destination="@id/rdvpat" />
+    </fragment>
+    <fragment
+        android:id="@+id/traitementmed"
+        android:name="com.example.myapplication.traitementmed"
+        android:label="fragment_traitementmed"
+        tools:layout="@layout/fragment_traitementmed" >
+        <action
+            android:id="@+id/action_traitementmed_to_prisemed"
+            app:destination="@id/prisemed" />
+    </fragment>
+    <fragment
+        android:id="@+id/traitementpat"
+        android:name="com.example.myapplication.traitementpat"
+        android:label="fragment_traitementpat"
+        tools:layout="@layout/fragment_traitementpat" />
+    <fragment
+        android:id="@+id/rdvpat"
+        android:name="com.example.myapplication.rdvpat"
+        android:label="fragment_rdvpat"
+        tools:layout="@layout/fragment_rdvpat" >
+        <action
+            android:id="@+id/action_rdvpat_to_rdv_details"
+            app:destination="@id/rdv_details" />
+    </fragment>
+    <fragment
+        android:id="@+id/rdvmed"
+        android:name="com.example.myapplication.rdvmed"
+        android:label="fragment_rdvmed"
+        tools:layout="@layout/fragment_rdvmed" />
+    <fragment
+        android:id="@+id/rdv_details"
+        android:name="com.example.myapplication.rdv_details"
+        android:label="fragment_rdv_details"
+        tools:layout="@layout/fragment_rdv_details" />
+    <fragment
+        android:id="@+id/listepat"
+        android:name="com.example.myapplication.listepat"
+        android:label="fragment_listepat"
+        tools:layout="@layout/fragment_listepat" >
+        <action
+            android:id="@+id/action_listepat_to_traitementmed"
+            app:destination="@id/traitementmed" />
+    </fragment>
+    <fragment
+        android:id="@+id/prisemed"
+        android:name="com.example.myapplication.prisemed"
+        android:label="fragment_prisemed"
+        tools:layout="@layout/fragment_prisemed" />
+    <fragment
+        android:id="@+id/invitationmed"
+        android:name="com.example.myapplication.invitationmed"
+        android:label="fragment_invitationmed"
+        tools:layout="@layout/fragment_invitationmed" />
+</navigation>

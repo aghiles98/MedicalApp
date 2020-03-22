@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Medical app</string>
+    <string name="splash">Medical app</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="num_tel">Numéro de téléphone</string>
+    <string name="mdp">Mot de passe</string>
+    <string name="nom">Nom</string>
+    <string name="prenom">Prénom</string>
+    <string name="adresse">Adresse</string>
+    <string name="commune">Commune</string>
+    <string name="specialite">Spécialité</string>
+    <string name="vide">vide</string>
+    <string name="nmdp">Nouveau mot de passe</string>
+    <string name="cmdp">Confirmez mot de passe</string>
+</resources>
